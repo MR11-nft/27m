@@ -1,1 +1,182 @@
-!
+<!DOCTYPE html>
+<html>
+<title>mooncake7</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/main.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#hut" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>INFO</p>
+  </a>
+  <a href="#info" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>RESERVE</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#hut" class="w3-bar-item w3-button" style="width:25% !important">HUT</a>
+    <a href="#info" class="w3-bar-item w3-button" style="width:25% !important">INFO</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo">Welcome to The Hut V2</h1>
+    <p>Thematic huts located in the best spots</p>
+    <img src="images/hut_1.jpeg" alt="boy" class="w3-image" width="992" height="1050">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="hut">
+    <h2 class="w3-text-light-grey">Information</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Welcome to V2 of The Hut. In here, you can relax and no countdown will torment you; it is your resting spot. Beware, there is a 5-digit code hidden somewhere, you will need that to advance. Once spotted, send it to the email provided on the first Hut. From there, you are going to be given instructions on how to go on with the hunt. Actually, it is not necessary, you can go on with the hunt and be able to complete it without that special code, as it isn't the code required for the URL. Oh, I don't think I'm remembering it correctly, wasn't it that if you send that mail with the code, you get automatically disqualified for the final gift? I don't know. Blue pill red pill. Your decision.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Description</h3>
+    <p class="w3-wide">Harmonious Environment</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Comfort</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Size</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-col w3-section" style="width:20%">
+        <span class="w3-xlarge">15+</span><br>
+        <b id="init">A</b>mazing Rooms
+      </div>
+      <div class="w3-col w3-section" style="width:20%">
+        <span class="w3-xlarge">65+</span><br>
+        <b id="init">D</b>iscovered Forest Acres
+      </div>
+      <div class="w3-col w3-section" style="width:20%">
+        <span class="w3-xlarge">100+</span><br>
+        <b id="init">D</b>one Agreements
+      </div>
+      <div class="w3-col w3-section" style="width:20%">
+        <span class="w3-xlarge">170+</span><br>
+        <b id="init">U</b>nbelievable Visitors
+      </div>
+      <div class="w3-col w3-section" style="width:20%">
+        <span class="w3-xlarge">470+</span><br>
+        <b id="init">P</b>eople Happy
+      </div>
+    </div>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey" id="info">Reservation</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Sums Required</li>
+          <li class="w3-padding-16">100 MB Wi-fi</li>
+          <li class="w3-padding-16">10 Beds</li>
+          <li class="w3-padding-16">General Support</li>
+          <li class="w3-padding-16">
+            <h2>€200</h2>
+            <span class="w3-opacity">per day</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Reserve</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">All-inclusive</li>
+          <li class="w3-padding-16">Sums Required</li>
+          <li class="w3-padding-16">200 MB Wi-fi</li>
+          <li class="w3-padding-16">10 Beds</li>
+          <li class="w3-padding-16">Personalized Support</li>
+          <li class="w3-padding-16">
+            <h2>€300</h2>
+            <span class="w3-opacity">per day</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Reserve</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">Reputation</h3>  
+    <img src="images/garyGoodspeed.webp" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Gary Goodspeed</span> Starfighter Driver at Final Space.</p>
+    <p>"My companion is green with two eyes."</p><br>
+    
+    <img src="images/Avocato.webp" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px; height: 80px;">
+    <p><span class="w3-large w3-margin-right">Avocato</span> Professional Space Shooter.</p>
+    <p>"Below me there is something important."</p>
+
+    <p id="blackCode">The code/clue you need for the URL is a 3-digit number + a "d" --> ###d</p>
+  <!-- End About Section -->
+  </div>
+  
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact The Hut V2</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Neo Tokyo, JAPAN</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +34 678 184 208</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: thehutv2experience@gmail.com</p>
+    </div><br>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
